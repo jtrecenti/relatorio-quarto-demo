@@ -12,6 +12,7 @@ jobs:
       - uses: astral-sh/setup-uv@v3
       - run: uv python install 3.12
       - run: uv sync
+      - run: uv pip install jupyter nbclient nbformat ipykernel
       - uses: quarto-dev/quarto-actions/setup@v2
       - run: uv run quarto render
       - uses: peaceiris/actions-gh-pages@v4
