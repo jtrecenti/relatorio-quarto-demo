@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Relatório Demo",
+    "section": "",
+    "text": "Análise rápida\n\nimport pandas as pd\nimport plotnine as p9\nfrom relatorio_demo.funcoes import resumo\n\ndf = pd.DataFrame({'x': range(20), 'y': [i**1.6 for i in range(20)]})\nprint(resumo(df, 'y'))\n\n(p9.ggplot(df, p9.aes('x','y')) + p9.geom_line() + p9.geom_point() + p9.theme_minimal())\n\n{'media': np.float64(43.43895867718256), 'mediana': np.float64(36.72272621248435), 'desvio': np.float64(35.92967291233019)}"
+  }
+]
