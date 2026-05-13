@@ -1,0 +1,8 @@
+project:
+  type: website
+  output-dir: _site
+website:
+  title: "Relatório Demo"
+format:
+  html:
+    theme: cosmo
